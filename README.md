@@ -74,7 +74,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - _ 71.230.115.187_
 
 Machines within the network can only be accessed by SSH port.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM? What was its IP address?_
 Jumpboxprovisioner, 71.230.115.187
 A summary of the access policies in place can be found in the table below.
 
@@ -90,21 +90,25 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 Ansible reads YAML code. YAML stands for YAML ain’t markup language and is designed to be very readable and easy to write.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- _Download the .deb for filebeat.
+- _Install the filebeat.
+- _configure the filebeat.config then launch the filebeat.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![](images/docker_ps.png)
+!
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- _10.0.0.4
+- _10.0.0.5
+- _10.0.0.6
+- _10.0.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
-
+- _Filebeat_
+- _Metricbeat_
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
